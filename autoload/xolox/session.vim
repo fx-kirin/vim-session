@@ -295,7 +295,7 @@ function! s:check_special_tabpage(session)
   if status > 0 && winnr('$') > 1
     let winrestcmd = substitute(winrestcmd, '\%(vert \)\@<!\dresize \d\+|', '', 'g')
     echo winrestcmd
-    call add(a:session, winrestcmd)
+    "call add(a:session, winrestcmd)
   endif
 endfunction
 
